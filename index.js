@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path')
 const fs = require('fs')
 const app = express()
+require('dotenv')
 
 
 app.use(express.json())
