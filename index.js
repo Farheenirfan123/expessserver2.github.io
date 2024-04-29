@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path')
 const fs = require('fs')
 const app = express()
-require('dotenv')
+
 
 
 app.use(express.json())
@@ -51,15 +51,8 @@ app.post('/create' , function(req, res){
 
 
 
-    const PORT = process.env.PORT || 5000;
-
-    app.get('/', (req, res) => {
-        res.send('Hello, World!');
-    });
     
-    app.listen(PORT, () => {
-        console.log(`Server started on port ${PORT}`);
-    });
+    app.listen(5000)
 
 
 
